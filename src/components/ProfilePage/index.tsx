@@ -24,11 +24,11 @@ const ProfilePage: React.FC = () => {
                 <ul>
                     <li>
                         <LocationIcon />
-                        Rio Grande do Sul, Brasil
+                        <span>Rio Grande do Sul, Brasil</span>
                     </li>
                     <li>
                         <CakeIcon />
-                        Nascido(a) em 05 de junho de 2002
+                        <span>Nascido(a) em 05 de junho de 2002</span>
                     </li>
                 </ul>
 

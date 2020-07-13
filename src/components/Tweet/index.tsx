@@ -2,7 +2,16 @@ import React from 'react';
 
 import { Container, Retweeted, RocketseatIcon, Body, Avatar, Content, Header, Dot, Description, ImageContent, Icons, Status, CommentIcon, RetweetIcon, LikeIcon } from './styles';
 
-const Tweet: React.FC = () => {
+interface Props {
+    comments: string;
+    retweets: string;
+    likes: string;
+    description: string
+}
+
+const Tweet: React.FC<Props> = ({
+    comments, retweets, likes, description
+}) => {
   return (
       <Container>
           <Retweeted>
@@ -22,22 +31,22 @@ const Tweet: React.FC = () => {
                   </Header>
 
                   {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-                  <Description>Foguete não tem ré 🚀</Description>
+                  <Description>{description}</Description>
 
                   <ImageContent />
 
                   <Icons>
                       <Status>
                           <CommentIcon />
-                          18
+                          {comments}
                       </Status>
                       <Status>
                           <RetweetIcon />
-                          18
+                          {retweets}
                       </Status>
                       <Status>
                           <LikeIcon />
-                          999
+                          {likes}
                       </Status>
                   </Icons>
               </Content>

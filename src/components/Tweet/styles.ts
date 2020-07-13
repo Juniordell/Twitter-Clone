@@ -43,7 +43,7 @@ export const  Body = styled.div`
 export const  Avatar = styled.div`
    width: 49px;
    height: 49px;
-   border-radius: 40%;
+   border-radius: 50%;
    flex-shrink: 0;
    background: var(--gray);
 
@@ -125,8 +125,8 @@ export const  Icons = styled.div`
     > div {
         cursor: pointer;
         &:hover {
-        opacity: .7;
-    }
+            opacity: .7;
+        }
     }
 `
 
@@ -161,6 +161,7 @@ export const  Status = styled.div`
             fill: var(--like);
         }
     }
+
 `
 
 const iconCSS = css`

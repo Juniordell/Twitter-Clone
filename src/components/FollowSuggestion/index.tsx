@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Container, Avatar, Info, FollowButton } from './styles';
 
@@ -11,6 +11,17 @@ const FollowSuggestion: React.FC<Props> = ({
     name,
     nickname
 }) => {
+    
+    const [follow, setFollow] = useState(false)
+
+    function followTrue() {
+        setFollow(true)
+    }
+
+    function followFalse() {
+        setFollow(false)
+    }
+
     return (
         <Container>
             <div>
@@ -21,8 +32,13 @@ const FollowSuggestion: React.FC<Props> = ({
                     <span>{nickname}</span>
                 </Info>
             </div>
+            { follow && 
+                <FollowButton onClick={followFalse}>Seguindo</FollowButton> 
+            }
 
-            <FollowButton outlined>Seguir</FollowButton> 
+            { !follow && 
+                <FollowButton outlined onClick={followTrue}>Seguir</FollowButton> 
+            }
 
         </Container>
   );

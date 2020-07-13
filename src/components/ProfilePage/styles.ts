@@ -75,12 +75,25 @@ export const ProfileData = styled.div`
 
         > li {
             font-size: 15px;
-            color: var(--gray);
+            display: flex;
 
             > svg {
                 fill: var(--gray);
 
                 margin-right: 5px;
+            }
+
+            > span {
+                color: var(--gray);
+            }
+
+        }
+
+        > li + li {
+            padding-top: 1px;
+
+            > span {
+                margin-top: 2px;
             }
         }
     }
