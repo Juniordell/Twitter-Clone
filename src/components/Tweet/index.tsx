@@ -21,7 +21,8 @@ const Tweet: React.FC = () => {
                       <time>27 de jun</time>
                   </Header>
 
-                  <Description>Foguete não tem ré </Description>
+                  {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+                  <Description>Foguete não tem ré 🚀</Description>
 
                   <ImageContent />
 

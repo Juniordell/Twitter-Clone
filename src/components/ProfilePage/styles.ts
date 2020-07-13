@@ -108,7 +108,7 @@ export const Followage = styled.div`
         font-size: 15px;
         color: var(--gray);
 
-        & * span {
+        & + span {
             margin-left: 20px;
         }
     }
