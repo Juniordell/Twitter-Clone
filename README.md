@@ -5,9 +5,8 @@
 <br>
 
 ## Demonstration
-<hr>
 
-![Gif](https://im3.ezgif.com/tmp/ezgif-3-c99b89eb2a0e.gif)
+![Gif](https://media3.giphy.com/media/IzWFI6nboiltquwt8G/giphy.gif)
 
 ## Link
 https://trusting-kowalevski-61d671.netlify.app/
