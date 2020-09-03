@@ -84,6 +84,7 @@ const Tweet: React.FC<Props> = ({ comments, retweets, likes, description }) => {
               <Button
                 onClick={() => {
                   setLiked(!liked);
+
                   const reverseAnimation = -1;
                   const normalAnimation = 1;
                   setAnimationState({
@@ -106,7 +107,7 @@ const Tweet: React.FC<Props> = ({ comments, retweets, likes, description }) => {
                     isPaused={animationState.isPaused}
                   />
                   <span style={{ color: liked ? '#a51b43' : '#aabac1' }}>
-                    {likes}
+                    {(likes = liked ? (Number(likes) + 1).toString() : likes)}
                   </span>
                 </div>
               </Button>
