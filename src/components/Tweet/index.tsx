@@ -19,7 +19,6 @@ import {
   Status,
   CommentIcon,
   RetweetIcon,
-  LikeIcon,
   Button,
 } from './styles';
 
